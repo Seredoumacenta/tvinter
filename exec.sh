@@ -3,7 +3,7 @@
 # Script pour configurer l'exécution automatique de ~/chainetv/all.sh
 # dans le fichier .bashrc
 
-echo "=== Configuration de l'exécution automatique de ~/chainetv/all.sh ==="
+echo "=== Configuration de l'exécution automatique de ~/chainetv/All.sh ==="
 
 # 1. Créer une sauvegarde de .bashrc
 echo "1. Création d'une sauvegarde de ~/.bashrc..."
@@ -38,15 +38,15 @@ fi
 
 # 4. Vérifier si le script all.sh existe et est exécutable
 echo "4. Vérification du script ~/chainetv/all.sh..."
-if [ -f ~/chainetv/all.sh ]; then
+if [ -f ~/chainetv/All.sh ]; then
     echo "   ✓ Le script all.sh existe"
     
     # Vérifier s'il est exécutable
-    if [ -x ~/chainetv/all.sh ]; then
+    if [ -x ~/chainetv/All.sh ]; then
         echo "   ✓ Le script est déjà exécutable"
     else
         echo "   - Le script n'est pas exécutable, configuration des permissions..."
-        if chmod +x ~/chainetv/all.sh; then
+        if chmod +x ~/chainetv/All.sh; then
             echo "   ✓ Permissions d'exécution accordées"
         else
             echo "   ✗ Erreur lors de la configuration des permissions"
@@ -91,5 +91,5 @@ esac
 echo ""
 echo "N'oubliez pas:"
 echo "- Le script s'exécutera dans chaque nouveau terminal"
-echo "- Pour désactiver: supprimez la ligne 'bash ~/chainetv/all.sh' de ~/.bashrc"
+echo "- Pour désactiver: supprimez la ligne 'bash ~/chainetv/All.sh' de ~/.bashrc"
 echo "- Pour restaurer la sauvegarde: cp ~/.bashrc.backup.* ~/.bashrc"
